@@ -62,53 +62,53 @@ public class DataSeeder implements CommandLineRunner {
 
                 productRepository.save(new Product(null, "Smart Watch Series 7", "Fitness tracking smartwatch",
                                 new BigDecimal("399.99"), new BigDecimal("329.99"), "TechWatch", 50,
-                                "https://loremflickr.com/500/500/smartwatch", 4.7, 689, electronics, null));
+                                "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80", 4.7, 689, electronics, null));
 
                 productRepository.save(new Product(null, "Portable Bluetooth Speaker", "Waterproof 360-degree speaker",
                                 new BigDecimal("89.99"), new BigDecimal("69.99"), "SoundWave", 40,
-                                "https://loremflickr.com/500/500/speaker", 4.6, 523, electronics, null));
+                                "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=800&auto=format&fit=crop&q=80", 4.6, 523, electronics, null));
 
                 productRepository.save(new Product(null, "Flagship Smartphone Pro", "Latest flagship smartphone",
                                 new BigDecimal("999.99"), new BigDecimal("899.99"), "TechPhone", 20,
-                                "https://loremflickr.com/500/500/smartphone", 4.5, 445, electronics, null));
+                                "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800&auto=format&fit=crop&q=80", 4.5, 445, electronics, null));
 
                 productRepository.save(new Product(null, "Premium Wireless Headphones", "Noise-cancelling headphones",
                                 new BigDecimal("299.99"), new BigDecimal("249.99"), "SoundWave", 35,
-                                "https://loremflickr.com/500/500/headphones", 4.7, 342, electronics, null));
+                                "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=80", 4.7, 342, electronics, null));
 
                 productRepository.save(new Product(null, "Fitness Tracker Band", "Slim fitness band, 14-day battery",
                                 new BigDecimal("79.99"), null, "FitBand", 60,
-                                "https://loremflickr.com/500/500/fitnessband", 4.3, 1024, electronics, null));
+                                "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=800&auto=format&fit=crop&q=80", 4.3, 1024, electronics, null));
 
                 productRepository.save(new Product(null, "Gaming Mechanical Keyboard", "RGB mechanical keyboard",
                                 new BigDecimal("149.99"), new BigDecimal("119.99"), "GameGear", 30,
-                                "https://loremflickr.com/500/500/keyboard", 4.6, 412, electronics, null));
+                                "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=800&auto=format&fit=crop&q=80", 4.6, 412, electronics, null));
 
                 Product tee = productRepository.save(new Product(null, "Premium Black Tee", "Soft cotton t-shirt",
                                 new BigDecimal("34.99"), new BigDecimal("24.99"), "BasicCo", 100,
-                                "https://loremflickr.com/500/500/tshirt", 4.5, 345, clothing, null));
+                                "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=800&auto=format&fit=crop&q=80", 4.5, 345, clothing, null));
 
                 Product sneakers = productRepository
                                 .save(new Product(null, "High-Top Canvas Sneakers", "Classic canvas sneakers",
                                                 new BigDecimal("119.99"), new BigDecimal("89.99"), "StepUp", 45,
-                                                "https://loremflickr.com/500/500/sneakers", 4.4, 156, clothing, null));
+                                                "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=800&auto=format&fit=crop&q=80", 4.4, 156, clothing, null));
 
                 productRepository.save(new Product(null, "Retro Coffee Maker", "Classic style coffee maker",
                                 new BigDecimal("199.99"), new BigDecimal("149.99"), "BrewMaster", 25,
-                                "https://loremflickr.com/500/500/coffeemaker", 4.4, 178, home, null));
+                                "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?w=800&auto=format&fit=crop&q=80", 4.4, 178, home, null));
 
                 productRepository.save(new Product(null, "Artisan Ceramic Vase", "Handcrafted ceramic vase",
                                 new BigDecimal("39.99"), new BigDecimal("29.99"), "Artisan", 50,
-                                "https://loremflickr.com/500/500/ceramicvase", 4.5, 156, home, null));
+                                "https://images.unsplash.com/photo-1581783342308-f792dbdd27c5?w=800&auto=format&fit=crop&q=80", 4.5, 156, home, null));
 
                 productRepository.save(new Product(null, "Mystery of the Night", "Bestselling mystery novel",
                                 new BigDecimal("19.99"), new BigDecimal("14.99"), "PenPress", 80,
-                                "https://loremflickr.com/500/500/book", 4.2, 189, books, null));
+                                "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=800&auto=format&fit=crop&q=80", 4.2, 189, books, null));
 
                 Product backpack = productRepository.save(new Product(null, "Canvas Daypack",
                                 "Everyday canvas backpack",
                                 new BigDecimal("69.99"), new BigDecimal("49.99"), "CarryAll", 40,
-                                "https://loremflickr.com/500/500/backpack", 4.3, 345, accessories, null));
+                                "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&auto=format&fit=crop&q=80", 4.3, 345, accessories, null));
 
                 seedVariants(tee, List.of("S", "M", "L", "XL"), List.of("Black", "White", "Gray"));
                 seedVariants(sneakers, List.of("8", "9", "10", "11"), List.of("Black", "White"));
