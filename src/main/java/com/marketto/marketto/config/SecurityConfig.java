@@ -48,8 +48,13 @@ public class SecurityConfig {
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll()
-                        .requestMatchers("/", "/index.html", "/*.html", "/*.css", "/*.js", "/assets/**", "/static/**",
-                                "/favicon.ico")
+                        .requestMatchers("/", "/index.html", "/*.html", "/*.css", "/*.js", "/*.png", "/assets/**",
+                                "/static/**", "/favicon.ico", "/favicon.svg", "/icons.svg")
+                        .permitAll()
+                        .requestMatchers("/products", "/products/*", "/cart", "/checkout", "/account", "/login",
+                                "/register", "/orders", "/wishlist", "/terms", "/privacy", "/track-order",
+                                "/contact", "/faqs", "/store-locations", "/careers", "/returns-policy",
+                                "/shipping-info")
                         .permitAll()
                         .requestMatchers("/api/auth/**").permitAll()
                         .requestMatchers(HttpMethod.GET, "/api/products/**", "/api/categories/**").permitAll()
